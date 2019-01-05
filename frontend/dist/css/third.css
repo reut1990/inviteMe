@@ -1,0 +1,94 @@
+.template-third-container {
+    background-image: url("https://i.ibb.co/cy10bP3/pool-template.png");
+    width: 620px;
+    background-repeat: no-repeat;
+  
+    /* padding: 10px; */  
+    /* background-size: 600px 600px;
+    display: flex;
+    width: 400px;  */
+    /* border: 1px solid gray; */
+    /* margin-top: 10px;
+    padding:20px; */
+  }
+ 
+  .template{
+    position: relative;
+  }
+  .third-template{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .card-third-container {
+    width: 620px;
+    padding: 10px;
+    margin: 0 auto;
+  }
+  
+
+  .edit-template-third-section {
+    display: flex;
+  }
+  .invaitor-name {
+    text-align: center;
+    font-size: 50px;
+    /* font-family: "Satisfy", cursive; */
+    margin-bottom: 15px;
+    
+    }
+   
+  .event-name{
+      padding: 10px;
+    }
+  
+  .backround-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+  .backgroun-frame {
+    display: flex;
+    align-items: center;
+    width: 350px;
+    /* height: 480px; */
+    border: 3px solid white;
+    border-radius: 9px;
+    margin: auto;
+    padding:15px;
+    
+  }
+
+  #nav {
+    position: relative;
+    padding: 0px;
+  }
+  .edit-template-section {
+    display: flex;
+  }
+
+
+
+ 
+
+  .edit-template-third-section{
+      display: flex;
+      flex-direction: column;
+  }
+  .social-media-box {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    margin: 20px 10px;
+    background-color: rgb(187, 185, 185);
+    transition: background-color 0.5s;
+  }
+  .social-media-box:hover {
+    cursor: pointer;
+    background-color: #516fad;
+  }
+  

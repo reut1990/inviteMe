@@ -1,0 +1,42 @@
+@import 'formReset.css';
+
+
+/* Helpers */
+@import 'helpers.css';
+
+/* Template */
+@import 'first.css';
+@import 'third.css';
+
+
+/* Edit component */
+@import 'edit-template/templateEditor.css';
+@import 'edit-template/editBkg.css';
+
+/* Fonts */
+@import 'fonts/MaterialIcons.css';
+@import 'fonts/Quicksand.css';
+@import 'fonts/Satisfy.css';
+@import 'fonts/Merriweather.css';
+@import 'fonts/AsapCondensed.css';
+@import 'fonts/Oswald.css';
+@import 'fonts/Acma.css';
+@import 'fonts/Anton-Regular.ttf';
+@import 'fonts/YeonSung.css';
+@import url('https://fonts.googleapis.com/css?family=Charmonman');
+@import 'fonts/Kaushan.css';
+@import 'fonts/Comfortaa.css';
+@import 'fonts/Montez.css';
+@import 'fonts/Tangerine.css';
+
+
+
+/* Bulma */
+@import 'bulma.css';
+
+
+.publish{
+    border: 2px solid black;
+    padding: 10px;
+    border-radius: 25px;
+}

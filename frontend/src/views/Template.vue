@@ -88,8 +88,8 @@ export default {
         this.showMapMenu = true;
       }
     },
-    closeEditor() { 
-      this.showMapMenu=false;
+    closeEditor() {
+      this.showMapMenu = false;
       this.showTxtMenu = false;
       this.$store.dispatch("removeEditingFrame");
       this.showBgcMenu = false;
@@ -102,8 +102,8 @@ export default {
       inviteService
         .add({
           cmps: this.dynamicCmps,
-          inviteName: '',
-          shortDescription:'',
+          inviteName: "",
+          shortDescription: "",
           generalStyle: this.generalStyle,
           templateId: this.currInviteCreated,
           creatorId: this.user.id,
@@ -135,12 +135,13 @@ export default {
         }
       });
     },
-    mapUpdate(field, data){
+    mapUpdate(field, data) {
       this.$store.dispatch({
-         type:"setUserMap",
-         field,
-         data,
-         currCmpPart: this.currCmpPart});
+        type: "setUserMap",
+        field,
+        data,
+        currCmpPart: this.currCmpPart
+      });
     },
     styleUpdate({ field, css, kind }) {
       if (kind !== "text" && kind !== "cmp") {
@@ -180,17 +181,36 @@ export default {
   padding: 10px;
 }
 
-.edit-toolbox h2{
+.edit-toolbox h2 {
   font-weight: 700;
 }
 
-.edit-toolbox input{
+.edit-toolbox input {
   height: 20px;
 }
 
-.add{
-  color:blue;
+.add {
+  color: blue;
   text-decoration: underline;
   cursor: pointer;
+}
+
+@media (max-width: 740px) {
+  .template {
+    margin: 0 auto 0 auto;
+    padding-top: 35px;
+  }
+}
+
+@media (max-width: 560px) {
+  .template {
+    padding-top: 40px;
+    padding: 40px 20px 0 20px;
+  }
+
+  .template-container {
+    width: 100%;
+    /* padding: 40px 52px 0 52px !important; */
+  }
 }
 </style>

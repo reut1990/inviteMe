@@ -12,6 +12,7 @@
 /* Edit component */
 @import 'edit-template/templateEditor.css';
 @import 'edit-template/editBkg.css';
+@import './nav.css'; 
 
 /* Fonts */
 @import 'fonts/MaterialIcons.css';

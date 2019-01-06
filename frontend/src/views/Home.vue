@@ -1,32 +1,26 @@
 <template>
   <section>
-    
-      <main-header></main-header>
-      <div class= "before-banner">
-        <section id="banner">
-          <h1 class="titleBanner">
-             <span class="first-line">
-              Online Invitation
-             </span>
-             <span class="second-line">
-                for any
-              Occasion 
-             </span>
-          </h1>
-       
-      
-        </section>
-      </div>
-      
-      <section class="templates">
-        <div class="templates-container">
-          <filter-list></filter-list>
-
-          <templateList :templates="templates"></templateList>
-        </div>
+    <main-header></main-header>
+    <div class="before-banner">
+      <section id="banner">
+        <h1 class="titleBanner">
+          <span class="first-line">Online Invitation</span>
+          <span class="second-line">
+            for any
+            Occasion
+          </span>
+        </h1>
       </section>
-      
-    
+    </div>
+
+    <section class="templates">
+      <div class="templates-container">
+        <filter-list></filter-list>
+
+        <templateList :templates="templates"></templateList>
+      </div>
+    </section>
+
     <main-footer></main-footer>
   </section>
 </template>
@@ -45,23 +39,23 @@ export default {
     templateList,
     mainHeader,
     mainFooter,
-    filterList,
-
+    filterList
   },
   computed: {},
-  created(){
-   templateService.query()
-   .then(res=>{
-     this.templates=res;
-   })
-   .catch(err=>{
-    //  console.log('err', err);
-   })
+  created() {
+    templateService
+      .query()
+      .then(res => {
+        this.templates = res;
+      })
+      .catch(err => {
+        //  console.log('err', err);
+      });
   },
   data() {
     return {
-      templates:[]
-    }
+      templates: []
+    };
   }
 };
 </script>
@@ -81,43 +75,27 @@ body {
   background-size: auto 100%;
   position: relative;
   top: 230px;
-  
 }
 
-.before-banner{
-    background: #ffe259;  
-    background: -webkit-linear-gradient(to right, #ffa751, #ffe259);  
-    background: linear-gradient(to right, #ffa751, #ffe259);
-    background-color: transparent;
-    background-repeat: repeat-x;
-    background-size: auto 100%;
-    background-position: left 0px bottom 90px;
-    z-index: 0;
-    margin-top: -145px;
-    height: 85vh;
+.before-banner {
+  background: #ffe259;
+  background: -webkit-linear-gradient(to right, #ffa751, #ffe259);
+  background: linear-gradient(to right, #ffa751, #ffe259);
+  background-color: transparent;
+  background-repeat: repeat-x;
+  background-size: auto 100%;
+  background-position: left 0px bottom 90px;
+  z-index: 0;
+  margin-top: -145px;
+  height: 85vh;
 }
 
-.titleBanner {
-  position: relative;
-  bottom: 235px;
-  font-size: 3.2em;
-  padding: 3.3em 0 0 1em;
-  letter-spacing: 3px;
-  font-weight: 700;
-  font-family: 'Montez', cursive;
-  text-align: center;
-  color: white;
-  opacity: 1;
-  color:white;
-  margin-top: 10px;
+.first-line {
+  display: inline-block;
+  animation: moveFromLeft 1.5s;
 }
 
-.first-line{
- display: inline-block;
- animation: moveFromLeft 1.5s;
-}
-
-.second-line{
+.second-line {
   margin-left: 15px;
   display: inline-block;
   animation: moveFromRight 1.5s;
@@ -152,35 +130,36 @@ body {
 }
 .templates-container {
   display: flex;
+  flex-direction: row;
 }
 
-@keyframes moveFromLeft{
-  0%{
-      transform: translateX(-150%);
-      opacity: 0;
+@keyframes moveFromLeft {
+  0% {
+    transform: translateX(-150%);
+    opacity: 0;
   }
 
-  50%{
+  50% {
     opacity: 0.5;
   }
-  100%{
-      transform: translateX(0);
-      opacity: 1;
+  100% {
+    transform: translateX(0);
+    opacity: 1;
   }
 }
 
-@keyframes moveFromRight{
-  0%{
-      transform: translateX(+150%);
-      opacity: 0;
+@keyframes moveFromRight {
+  0% {
+    transform: translateX(+150%);
+    opacity: 0;
   }
 
-  50%{
+  50% {
     opacity: 0.5;
   }
-  100%{
-      transform: translateX(0);
-      opacity: 1;
+  100% {
+    transform: translateX(0);
+    opacity: 1;
   }
 }
 
@@ -197,4 +176,15 @@ body {
   height: 200px;
   cursor: pointer;
 } */
+
+@media (max-width: 860px) {
+  .templates-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .templates{
+    padding: 2px;
+  }
+}
 </style>

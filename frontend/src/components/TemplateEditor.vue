@@ -94,8 +94,8 @@ export default {
       console.log("clicked publish");
       this.$emit("publish");
     },
-    addMap(){
-      console.log('addMap button was clicked');
+    addMap() {
+      console.log("addMap button was clicked");
       this.$emit("addMap");
     }
   }
@@ -168,5 +168,47 @@ hr {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+
+@media (max-width: 740px) {
+  .template-editor-section {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    padding: 5px;
+    left: 0;
+    width: 100%;
+    top: 0;
+    height: 50px;
+    background-color: #3f4652;
+    z-index: 1;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0 0 50px 0;
+  }
+
+  .editor-bckground-section,
+  .editor-socialMedia-section,
+  .editor-uploadImg-section,
+  .editor-uploadMap-section,
+  .editor-home-section,
+  .editor-publish-section {
+    padding: 10px;
+    margin: auto;
+  }
+  .template-editor-section i,
+  .icon-bkground-editor {
+    display: none;
+  }
+  .h4-Publish-editor {
+    margin: auto;
+  }
+}
+
+@media (max-width: 560px) {
+  .template-editor-section {
+    height: 70px;
+    width: auto;
+  }
 }
 </style>

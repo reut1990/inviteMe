@@ -1,6 +1,6 @@
 import axios from "axios";
 import storageService from '../services/storageService.js'
-const BASE_URL = 'https://inviteme-sprint4.herokuapp.com'
+const BASE_URL = 'http://localhost:3000'
 
 export default {
     query,

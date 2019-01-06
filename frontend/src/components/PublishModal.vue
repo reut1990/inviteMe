@@ -66,7 +66,7 @@ export default {
     return {
       // show: false,
       template: {},
-      url: `https://inviteme-sprint4.herokuapp.com/invite/prv/${this.inviteId}`,
+      url: `http://localhost:8080/invite/prv/${this.inviteId}`,
       fullUrl: "",
       userLogged: false,
       showLogin: false,

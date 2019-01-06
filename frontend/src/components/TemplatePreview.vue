@@ -1,21 +1,18 @@
 <template>
   <li>
-  
-    <div class="container-template" >
-      <router-link :to="`invite/${template._id}`">      
-      <img class="img-div" :src="templateImg" alt="loading img...">
+    <div class="container-template">
+      <router-link :to="`invite/${template._id}`">
+        <img class="img-div" :src="templateImg" alt="loading img...">
       </router-link>
       <!-- <div class="img-div" ></div> -->
       <!-- {{template.image.backgroundImage}} -->
-      
       <h5 class="template-name">{{template.name}}</h5>
       <div class="template-nums">
         <h5 class="template-stars">{{template.stars}}</h5>
         <template-star class="stars-rate" :score="template.stars"></template-star>
         <h5 class="template-download">{{template.downloadNum}}</h5>
       </div>
-    </div>  
-        
+    </div>
   </li>
 </template>
 
@@ -28,14 +25,14 @@ export default {
   components: {
     templateStar
   },
-  data(){
-    return{
-      idAddress: `template/${this.template.id}`,
-    }
+  data() {
+    return {
+      idAddress: `template/${this.template.id}`
+    };
   },
-  computed:{
-    templateImg(){
-      return require(`../assets/template${this.index+1}.png`);
+  computed: {
+    templateImg() {
+      return require(`../assets/template${this.index + 1}.png`);
     }
   }
 };
@@ -49,7 +46,7 @@ export default {
   border-radius: 6px;
 }
 .container-template:hover {
-  background:rgba(0, 0, 0, 0.14);
+  background: rgba(0, 0, 0, 0.14);
 }
 
 h5 {
@@ -82,4 +79,6 @@ li {
   float: left;
   padding-left: 5px;
 }
+
+/*  */
 </style>

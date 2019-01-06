@@ -1,7 +1,7 @@
 self.__precacheManifest = [
   {
-    "revision": "de9b6d1695e9059399ebb98ba38b0a39",
-    "url": "/img/template18.de9b6d16.png"
+    "revision": "edef76c3ee7ce359e5e691778de75bf2",
+    "url": "/index.html"
   },
   {
     "revision": "84a2023e91fad1c78a3c8cda5eb319df",
@@ -20,20 +20,20 @@ self.__precacheManifest = [
     "url": "/js/chunk-2d210c47.43cfb835.js"
   },
   {
-    "revision": "4ae694f1036c342b26bb",
+    "revision": "97bb79a7e524286deb2d",
     "url": "/css/chunk-804ecb28.207bb74a.css"
   },
   {
-    "revision": "4ae694f1036c342b26bb",
-    "url": "/js/chunk-804ecb28.ee8a90d4.js"
+    "revision": "97bb79a7e524286deb2d",
+    "url": "/js/chunk-804ecb28.29dcf7f3.js"
   },
   {
-    "revision": "f03cae00edeb819f9df0",
-    "url": "/css/chunk-vendors.ba543a0a.css"
+    "revision": "7d70019991c16ae1cf96",
+    "url": "/css/chunk-vendors.675d984d.css"
   },
   {
-    "revision": "f03cae00edeb819f9df0",
-    "url": "/js/chunk-vendors.513c1540.js"
+    "revision": "7d70019991c16ae1cf96",
+    "url": "/js/chunk-vendors.19bcda3a.js"
   },
   {
     "revision": "a18ef1fe0d546ea22aa3b8f08601b146",
@@ -112,20 +112,24 @@ self.__precacheManifest = [
     "url": "/img/template6.58bb65c6.png"
   },
   {
-    "revision": "16232809d05daa235009",
-    "url": "/js/app.65e50598.js"
+    "revision": "de9b6d1695e9059399ebb98ba38b0a39",
+    "url": "/img/template18.de9b6d16.png"
   },
   {
-    "revision": "a4dbe821dd548693b1cbdcb1ac0cbe91",
-    "url": "/index.html"
-  },
-  {
-    "revision": "aaa18eae2a0a7c16dbe85a21b186f07a",
-    "url": "/css/fonts/Charmonman-Bold.css"
+    "revision": "0f5de96efbb8d162538d",
+    "url": "/js/app.812309cc.js"
   },
   {
     "revision": "a30121d74fba1a73e60ea73c4e48dd5c",
     "url": "/css/edit-template/editBkg.css"
+  },
+  {
+    "revision": "4d00d933682a490ce95f67f783c833fe",
+    "url": "/css/edit-template/templateEditor.css"
+  },
+  {
+    "revision": "aaa18eae2a0a7c16dbe85a21b186f07a",
+    "url": "/css/fonts/Charmonman-Bold.css"
   },
   {
     "revision": "8160cda3240228aa49cbe816a0ff3c63",
@@ -136,20 +140,16 @@ self.__precacheManifest = [
     "url": "/css/fonts/Acma.css"
   },
   {
-    "revision": "4d00d933682a490ce95f67f783c833fe",
-    "url": "/css/edit-template/templateEditor.css"
-  },
-  {
     "revision": "9a85b4a42481aca779219338b9f277ad",
     "url": "/css/fonts/AsapCondensed.css"
   },
   {
-    "revision": "c4953e13f9f9a925c9586f6046fa88ad",
-    "url": "/css/fonts/Comfortaa.css"
-  },
-  {
     "revision": "eaa58bd764c77690ee77089e659cc0d8",
     "url": "/css/fonts/Kaushan.css"
+  },
+  {
+    "revision": "c4953e13f9f9a925c9586f6046fa88ad",
+    "url": "/css/fonts/Comfortaa.css"
   },
   {
     "revision": "84bebb1d179f56a2b9b8b18cddee3bf4",
@@ -160,39 +160,39 @@ self.__precacheManifest = [
     "url": "/css/fonts/MaterialIcons.css"
   },
   {
-    "revision": "95afaed3e9fd3c5e536c15ac3d8e1cae",
-    "url": "/css/fonts/Merriweather.css"
-  },
-  {
     "revision": "e0507995c7f40927317d65c866140507",
     "url": "/css/fonts/Montez.css"
+  },
+  {
+    "revision": "95afaed3e9fd3c5e536c15ac3d8e1cae",
+    "url": "/css/fonts/Merriweather.css"
   },
   {
     "revision": "b8d1ec7aaa98e70dd48ea7ec6ce80712",
     "url": "/css/fonts/Oswald.css"
   },
   {
-    "revision": "80df39fc48b08e72258298d4af676193",
-    "url": "/css/fonts/Quicksand.css"
-  },
-  {
     "revision": "6b5d1e6e7ae99860fa9e93e572410e36",
     "url": "/css/fonts/Satisfy.css"
+  },
+  {
+    "revision": "80df39fc48b08e72258298d4af676193",
+    "url": "/css/fonts/Quicksand.css"
   },
   {
     "revision": "0e271de067b08ba3e982d561c08ff991",
     "url": "/css/fonts/Tangerine.css"
   },
   {
-    "revision": "d0e6f223111fdd3c62b439677351c914",
-    "url": "/css/formReset.css"
-  },
-  {
     "revision": "41ec74224b00e86249a38a09ed9f94e5",
     "url": "/css/helpers.css"
   },
   {
-    "revision": "3a67e1f1ebffb0d8e6965d2b643eb165",
+    "revision": "d0e6f223111fdd3c62b439677351c914",
+    "url": "/css/formReset.css"
+  },
+  {
+    "revision": "c7a6d53c7df60ec6910b20dc69b774d2",
     "url": "/css/main.css"
   },
   {
@@ -202,6 +202,10 @@ self.__precacheManifest = [
   {
     "revision": "735ab4f94fbcd57074377afca324c813",
     "url": "/robots.txt"
+  },
+  {
+    "revision": "c7e3e5bd2a385a369855c7ae7716fccd",
+    "url": "/css/nav.css"
   },
   {
     "revision": "a530d322887cbba82aaad19e8949a4da",
@@ -220,8 +224,8 @@ self.__precacheManifest = [
     "url": "/css/fonts/Charmonman-Regular.css"
   },
   {
-    "revision": "16232809d05daa235009",
-    "url": "/css/app.a0b69d8f.css"
+    "revision": "0f5de96efbb8d162538d",
+    "url": "/css/app.a04b28bf.css"
   },
   {
     "revision": "0f918b994775a91f52a7540c862b6be0",
